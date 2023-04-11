@@ -73,6 +73,7 @@
                      </label>
                  </div>
                     <button type="submit" class="btn btn-primary">Submit</button>
+                    <button type="submit" class="btn btn-warning text-light"><a href="{{ url_for('login') }}">Login</a></button>
                 </div>
             </form>
         </div>
@@ -81,8 +82,8 @@
             {% for todo in todos %}
                 <div>
                     <p><b>Item:</b> {{ todo['content'] }}</p>
-                    <p><b>Importance:</b><i>({{ todo['degree']}})</i></p>
-                    <p><b>Frequency:</b> ({{ todo['due_date']}})</p>
+                    <p><b>Importance:</b><i>({{ todo['importance']}})</i></p>
+                    <p><b>Frequency:</b> ({{ todo['frequency']}})</p>
                     <form method="POST" action="{{ url_for('delete', id=todo['_id']) }}" >
                         <input class="btn btn-secondary" type="submit" value="Delete"
                                onclick="return confirm('Are you sure you want to delete this entry?')">
