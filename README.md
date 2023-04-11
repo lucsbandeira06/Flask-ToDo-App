@@ -12,28 +12,28 @@ These tasks will then be stored in a MongoDB cloud environment managed by the ad
 
 Below you can see a screenshot of the home page of this application.
 
-![img.png](img.png)
+![img.png](images/img.png)
 
 The user can then create an account within the application. It is important
 to mention that the to-do object will only be sent to the database if they are bound to a user account.
 
-![img_1.png](img_1.png)
+![img_1.png](images/img_1.png)
 
 In case the user still has not created an account he can then navigate to route register.
 
-![img_2.png](img_2.png)
+![img_2.png](images/img_2.png)
 
 Once they are registered and logged in. The user will be able to create and delete to-do tasks.
 
-![img_3.png](img_3.png)
+![img_3.png](images/img_3.png)
 
 The user data is kept in the MongoDB along with his to-do tasks history.
 
-![img_4.png](img_4.png)
+![img_4.png](images/img_4.png)
 
 As you may have noticed the password is encrypted for security purposes.
 
-![img_5.png](img_5.png)
+![img_5.png](images/img_5.png)
 
 
 ## References ##
